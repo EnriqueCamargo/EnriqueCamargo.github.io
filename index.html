@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Portafolio | Sergio Enrique Camargo Ruiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <button class="hamburger" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links">
+                <a href="#about" data-i18n="nav_about">Acerca de Mí</a>
+                <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+                <a href="#projects" data-i18n="nav_projects">Proyectos</a>
+                <a href="#certs" data-i18n="nav_certs">Certificaciones</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div id="language-switcher">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            
+            
+            <h1 data-i18n="name">Sergio Enrique Camargo Ruiz</h1>
+            <p class="tagline" data-i18n="tagline">Desarrollador Backend & Técnico en redes</p>
+            <div class="contact-links">
+                <a href="https://github.com/EnriqueCamargo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sergio-enrique-camargo-ruiz-406638395" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="section">
+            <h2 data-i18n="about_title">Acerca de Mí</h2>
+            <div class="about-flex">
+                <div class="photo-frame">
+                    <img src="img/fotoPersonal.png" alt="foto profesional">
+                </div>
+                
+                <div class="about-content">
+                    <p data-i18n="about_p1">Desarrollador backend con un enfoque en la arquitectura de sistemas escalables y la optimización de bases de datos. Actualmente, curso el 4to cuatrimestre de Ing. Tecnologías de la Información en la Universidad Politécnica de Sinaloa. Disfruto de resolver problemas complejos y aplicar patrones de diseño para escribir código limpio y eficiente.</p>
+                    <p data-i18n="about_p2">Mi principal motivación es transformar requisitos funcionales en soluciones robustas y seguras. Mi experiencia académica se centra en el diseño de APIs REST, bases de datos relacionales y la contenerización con Docker.</p>
+                    <a href="archives/CV.pdf" download class="btn" data-i18n="cv_button">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 data-i18n="skills_title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3 data-i18n="skills_lang">Lenguajes</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 data-i18n="skills_frameworks">Frameworks & herramientas</h3>
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>Intelli J</li>
+                        <li>Git</li>
+                        <li>Visual Studio Code</li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 data-i18n="skills_db">Bases de Datos & Cloud</h3>
+                    <ul>
+                        <li>MySQL / MongoDB</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 data-i18n="projects_title">Proyectos Clave</h2>
+
+            <div class="project-card">
+                <h3 data-i18n="proj1_name">Sistema de Encuestas</h3>
+                <p class="project-desc" data-i18n="proj1_desc">Sistema de encuestas enfocado en la recopilación de datos de los alumnos.</p>
+                <p class="project-tech">Tecnologías: Java, SpringBoot, mySQL, Postman</p>
+                <p class="project-challenge" data-i18n="proj1_challenge">Reto clave: El correcto uso de los métodos REST para así poder crear y consultar encuestas de forma eficiente.</p>
+                <div class="project-links">
+                    <a href="https://gitlab.com/EnriqueCamargo/proyectointegrador" target="_blank" class="link-btn" data-i18n="link_repo">Repositorio</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 data-i18n="proj2_name">Gestión de Productos</h3>
+                <p class="project-desc" data-i18n="proj2_desc">API centrada en la gestión de un inventario de un sistema de ventas.</p>
+                <p class="project-tech">Tecnologías: Java, Spring Boot, MySQL, Postman.</p>
+                <p class="project-challenge" data-i18n="proj2_challenge">Reto clave: La correcta administración de productos y manejo de estatus para la compra/venta.</p>
+                <div class="project-links">
+                    <a href="https://gitlab.com/EnriqueCamargo/SpringBoot.git" target="_blank" class="link-btn" data-i18n="link_repo">Repositorio</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="certs" class="section">
+            <h2 data-i18n="certs_title">Certificaciones & Reconocimientos</h2>
+            <div class="certs-grid">
+                
+                <div class="cert-item">
+                    <img src="img/CCNA.png" alt="Certificado CCNA" class="cert-img">
+                    <a href="archives/CCNA.pdf" download class="download-btn" data-i18n="download_pdf">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="cert-item">
+                    <img src="img/Linux.png" alt="Certificado Linux" class="cert-img">
+                    <a href="archives/linux.pdf" download class="download-btn" data-i18n="download_pdf">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="cert-item">
+                    <img src="img/TecnicoRedes.png" alt="Certificado Técnico Redes" class="cert-img">
+                    <a href="archives/Redes.pdf" download class="download-btn" data-i18n="download_pdf">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p data-i18n="footer_p1">&copy; 2025 Sergio Enrique Camargo Ruiz.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
