@@ -48,7 +48,12 @@ h1, h2, h3 {
     margin-top: 0;
 }
 
-
+.contact-links a {
+    
+    font-size: 3em; 
+    margin: 0 10px;
+    display: inline-block;
+}
 .navbar {
     background-color: #1E1E1E;
     padding: 15px 0;
